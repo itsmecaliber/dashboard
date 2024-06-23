@@ -1,0 +1,136 @@
+@import url('https://cdn.syncfusion.com/ej2/material.css');
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f5f7;
+  margin: 0;
+  padding: 0;
+}
+
+/* Sidebar Styles */
+.sidebar {
+  box-shadow: rgba(113, 122, 131, 0.11) 0px 7px 30px 0px;
+  transition: all 0.3s ease-in-out;
+  background-color: #ffffff;
+  padding: 10px;
+}
+
+.sidebar:hover {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 15px;
+}
+
+/* Navbar and Navigation Item Styles */
+.nav-item,
+.navbar {
+  z-index: 10000;
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.nav-item:hover,
+.navbar:hover {
+  background-color: #444;
+}
+
+.nav-item a,
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  padding: 5px 10px;
+}
+
+.nav-item a:hover,
+.navbar a:hover {
+  text-decoration: underline;
+}
+
+/* Media Query for Small Screens */
+@media screen and (max-width: 800px) {
+  .sidebar {
+    z-index: 10000000;
+  }
+
+  .navbar,
+  .nav-item {
+    padding: 15px;
+  }
+}
+
+/* Dialog and Popup Styles */
+.e-dlg-center-center, 
+.e-quick-popup-wrapper.e-device {
+  z-index: 1000000 !important;
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 15px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 15px;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgb(216, 216, 216);
+  border-radius: 40px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: rgb(180, 180, 180);
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+/* Color Picker Style */
+#preview {
+  background: transparent
+    url('https://ej2.syncfusion.com/react/demos/src/color-picker/images/pen.png')
+    no-repeat center;
+  display: inline-block;
+  height: 80px;
+  margin: 10px 0;
+  min-width: 300px;
+  max-width: 600px;
+  background-color: #008000;
+  border-radius: 8px;
+  transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+#preview:hover {
+  background-color: #006400;
+  box-shadow: rgba(0, 128, 0, 0.5) 0px 4px 15px;
+}
+
+/* Input Group Styles */
+.e-input-group:not(.e-float-icon-left), 
+.e-input-group.e-success:not(.e-float-icon-left), 
+.e-input-group.e-warning:not(.e-float-icon-left), 
+.e-input-group.e-error:not(.e-float-icon-left), 
+.e-input-group.e-control-wrapper:not(.e-float-icon-left), 
+.e-input-group.e-control-wrapper.e-success:not(.e-float-icon-left), 
+.e-input-group.e-control-wrapper.e-warning:not(.e-float-icon-left), 
+.e-input-group.e-control-wrapper.e-error:not(.e-float-icon-left) {
+  border: none;
+  border-radius: 4px;
+  background-color: #f9f9f9;
+  padding: 10px;
+  transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.e-input-group:not(.e-float-icon-left):focus-within,
+.e-input-group.e-success:not(.e-float-icon-left):focus-within, 
+.e-input-group.e-warning:not(.e-float-icon-left):focus-within, 
+.e-input-group.e-error:not(.e-float-icon-left):focus-within, 
+.e-input-group.e-control-wrapper:not(.e-float-icon-left):focus-within, 
+.e-input-group.e-control-wrapper.e-success:not(.e-float-icon-left):focus-within, 
+.e-input-group.e-control-wrapper.e-warning:not(.e-float-icon-left):focus-within, 
+.e-input-group.e-control-wrapper.e-error:not(.e-float-icon-left):focus-within {
+  background-color: #ffffff;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 15px;
+}
